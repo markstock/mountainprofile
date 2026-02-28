@@ -5,11 +5,9 @@ Generate an attractive profile from a DEM/DSM of a mountain
 On a Linux computer with basic software development packages installed, you should be able to do the following:
 
 	make
-	./mountainplots.bin -i dsm.png -o profile.png --elevs 1000 5000 --mpp 5
-
-For example, here is a DEM of the Matterhorn at 5 meters per pixel, followed by the result of
-
 	./mountainplots.bin -i Matterhorn5m.png --elevs 1647 4748 --mpp 5 -d 1.5 -o MatterhornProfile.png
+
+The above commands should result in creation of the profile image of the Matterhorn seen below.
 
 <img src="Matterhorn5m.png" width="600" alt="Digital elevation model of Matterhorn at 5 meters per pixel"/>
 
@@ -17,7 +15,7 @@ For example, here is a DEM of the Matterhorn at 5 meters per pixel, followed by 
 
 ## Motivation
 The measure of a mountain is far more than its summit elevation.
-While "prominence" is an esaily accessible second measurement, I find that
+While "prominence" is an easily accessible second measurement, I find that
 no small set of numbers can communicate the complex character of a mountain.
 This program is my attempt at measuring and classifying mountains.
 
