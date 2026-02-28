@@ -7,6 +7,14 @@ On a Linux computer with basic software development packages installed, you shou
 	make
 	./mountainplots.bin -i dsm.png -o profile.png --elevs 1000 5000 --mpp 5
 
+For example, here is a DEM of the Matterhorn at 5 meters per pixel, followed by the result of
+
+	./mountainplots.bin -i Matterhorn5m.png --elevs 1647 4748 --mpp 5 -d 1.5 -o MatterhornProfile.png
+
+![Digital elevation model of Matterhorn at 5 meters per pixel](Matterhorn5m.png | width=400)
+
+![Graphical profile of the Matterhorn at 5 meters per pixel](MatterhornProfile.png | width=400)
+
 ## Motivation
 The measure of a mountain is far more than its summit elevation.
 While "prominence" is an esaily accessible second measurement, I find that
