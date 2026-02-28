@@ -11,9 +11,13 @@ For example, here is a DEM of the Matterhorn at 5 meters per pixel, followed by 
 
 	./mountainplots.bin -i Matterhorn5m.png --elevs 1647 4748 --mpp 5 -d 1.5 -o MatterhornProfile.png
 
-![Digital elevation model of Matterhorn at 5 meters per pixel](Matterhorn5m.png =400x)
+![Digital elevation model of Matterhorn at 5 meters per pixel](./Matterhorn5m.png =400x)
+![](./Matterhorn5m.png =400x)
 
 ![Graphical profile of the Matterhorn at 5 meters per pixel](MatterhornProfile.png =400x)
+![](MatterhornProfile.png =400x)
+
+<img src="MatterhornProfile.png" width="400"/>
 
 ## Motivation
 The measure of a mountain is far more than its summit elevation.
