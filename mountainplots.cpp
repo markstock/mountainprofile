@@ -96,6 +96,8 @@ int main(int argc, char const *argv[]) {
   app.add_option("-e,--elevs", elevs, "elevation of black and white pixels, meters, defaults 0 1000")->expected(2);
   float mpp = -1.f;
   app.add_option("-m,--mpp", mpp, "meters per pixel in the dem, default is to assume 1.0");
+  float darker = 1.f;
+  app.add_option("-d,--dark", darker, "multiplier on image intensity, default is 1.0");
 
   // finally parse
   try {
@@ -221,7 +223,7 @@ int main(int argc, char const *argv[]) {
     //profimg[px][py] += std::pow(distsq+1.f, -0.3f);
 
     // bilinear
-    const float toadd = std::pow(distsq+1.f, -0.3f);
+    const float toadd = darker * mpp * std::pow(distsq+1.f, -0.3f);
     const float fracx = pfx - (float)px;
     const float fracy = pfy - (float)py;
     profimg[px][py] += toadd * (1.f-fracx) * (1.f-fracy);
