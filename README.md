@@ -22,7 +22,7 @@ This program is my attempt at measuring and classifying mountains.
 It generates an "x-ray" of the surface of the mountain, given by a DEM (digital
 elevation model) or DSM (digital surface model) in png format (we recommend
 using 16 bits per channel, greyscale only), rotated around the summit point.
-The image sets to bottom pixel row at sea level and uses the spatial resolution
+The image sets the bottom pixel row to sea level and uses the spatial resolution
 as the vertical resolution (5 meters per pixel in the above example).
 
 The resulting image communicates much of the character of a mountain: how high
